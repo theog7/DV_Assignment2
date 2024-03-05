@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side-by-Side Webpages</title>
+    <style>
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100vh; 
+        }
+        .container iframe {
+            width: 50%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <iframe src="mydvdata.html" title="First HTML"></iframe>
+        <iframe src="e.html" title="Second HTML"></iframe>
+    </div>
+</body>
+</html>

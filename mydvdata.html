@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Chain</title>
+    <style>
+    table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: calc(100% - 16px); 
+  margin: 0 auto; 
+}
+
+th, td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px; 
+}
+
+th {
+  background-color: #3182bd;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #fff7bc;
+  color: black;
+}
+
+tr:hover {
+  background-color: #fec44f;
+  color: white;
+}
+
+    </style>
+</head>
+<body>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>date</th>
+      <th>EstimatedCost</th>
+      <th>RawMaterial</th>
+      <th>Workmanship</th>
+      <th>StorageCost</th>
+      <th>ActualCost</th>
+      <th>SoldPrice</th>
+      <th>MarginOfProfit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1/1/19</td>
+      <td>1094</td>
+      <td>211</td>
+      <td>386</td>
+      <td>40</td>
+      <td>637</td>
+      <td>1203.4</td>
+      <td>566.4</td>
+    </tr>
+    <tr>
+      <td>2/1/19</td>
+      <td>2850</td>
+      <td>523</td>
+      <td>199</td>
+      <td>49</td>
+      <td>771</td>
+      <td>3135.0</td>
+      <td>2364.0</td>
+    </tr>
+    <tr>
+      <td>3/1/19</td>
+      <td>2168</td>
+      <td>580</td>
+      <td>236</td>
+      <td>39</td>
+      <td>855</td>
+      <td>2384.8</td>
+      <td>1529.8</td>
+    </tr>
+    <tr>
+      <td>4/1/19</td>
+      <td>1370</td>
+      <td>368</td>
+      <td>559</td>
+      <td>34</td>
+      <td>961</td>
+      <td>1507.0</td>
+      <td>546.0</td>
+    </tr>
+    <tr>
+      <td>5/1/19</td>
+      <td>2429</td>
+      <td>550</td>
+      <td>291</td>
+      <td>33</td>
+      <td>874</td>
+      <td>2671.9</td>
+      <td>1797.9</td>
+    </tr>
+    <tr>
+      <td>6/1/19</td>
+      <td>1644</td>
+      <td>143</td>
+      <td>395</td>
+      <td>31</td>
+      <td>569</td>
+      <td>1808.4</td>
+      <td>1239.4</td>
+    </tr>
+    <tr>
+      <td>7/1/19</td>
+      <td>1641</td>
+      <td>640</td>
+      <td>497</td>
+      <td>30</td>
+      <td>1167</td>
+      <td>1805.1</td>
+      <td>638.1</td>
+    </tr>
+    <tr>
+      <td>8/1/19</td>
+      <td>2340</td>
+      <td>673</td>
+      <td>472</td>
+      <td>29</td>
+      <td>1174</td>
+      <td>2574.0</td>
+      <td>1400.0</td>
+    </tr>
+    <tr>
+      <td>9/1/19</td>
+      <td>2327</td>
+      <td>90</td>
+      <td>31</td>
+      <td>32</td>
+      <td>153</td>
+      <td>2559.7</td>
+      <td>2406.7</td>
+    </tr>
+    <tr>
+      <td>10/1/19</td>
+      <td>1486</td>
+      <td>398</td>
+      <td>528</td>
+      <td>33</td>
+      <td>959</td>
+      <td>1634.6</td>
+      <td>675.6</td>
+    </tr>
+    <tr>
+      <td>11/1/19</td>
+      <td>383</td>
+      <td>21</td>
+      <td>48</td>
+      <td>34</td>
+      <td>103</td>
+      <td>421.3</td>
+      <td>318.3</td>
+    </tr>
+    <tr>
+      <td>12/1/19</td>
+      <td>451</td>
+      <td>416</td>
+      <td>441</td>
+      <td>38</td>
+      <td>895</td>
+      <td>496.1</td>
+      <td>-398.9</td>
+    </tr>
+    <tr>
+      <td>1/1/20</td>
+      <td>900</td>
+      <td>514</td>
+      <td>60</td>
+      <td>42</td>
+      <td>616</td>
+      <td>990.0</td>
+      <td>374.0</td>
+    </tr>
+    <tr>
+      <td>2/1/20</td>
+      <td>1653</td>
+      <td>201</td>
+      <td>558</td>
+      <td>43</td>
+      <td>802</td>
+      <td>1818.3</td>
+      <td>1016.3</td>
+    </tr>
+    <tr>
+      <td>3/1/20</td>
+      <td>1070</td>
+      <td>271</td>
+      <td>32</td>
+      <td>42</td>
+      <td>345</td>
+      <td>1177.0</td>
+      <td>832.0</td>
+    </tr>
+    <tr>
+      <td>4/1/20</td>
+      <td>443</td>
+      <td>452</td>
+      <td>149</td>
+      <td>43</td>
+      <td>644</td>
+      <td>487.3</td>
+      <td>-156.7</td>
+    </tr>
+    <tr>
+      <td>5/1/20</td>
+      <td>2473</td>
+      <td>344</td>
+      <td>223</td>
+      <td>50</td>
+      <td>617</td>
+      <td>2720.3</td>
+      <td>2103.3</td>
+    </tr>
+    <tr>
+      <td>6/1/20</td>
+      <td>1453</td>
+      <td>478</td>
+      <td>17</td>
+      <td>50</td>
+      <td>545</td>
+      <td>1598.3</td>
+      <td>1053.3</td>
+    </tr>
+    <tr>
+      <td>7/1/20</td>
+      <td>1659</td>
+      <td>599</td>
+      <td>276</td>
+      <td>55</td>
+      <td>930</td>
+      <td>1824.9</td>
+      <td>894.9</td>
+    </tr>
+    <tr>
+      <td>8/1/20</td>
+      <td>761</td>
+      <td>673</td>
+      <td>392</td>
+      <td>48</td>
+      <td>1113</td>
+      <td>837.1</td>
+      <td>-275.9</td>
+    </tr>
+    <tr>
+      <td>9/1/20</td>
+      <td>930</td>
+      <td>469</td>
+      <td>43</td>
+      <td>40</td>
+      <td>552</td>
+      <td>1023.0</td>
+      <td>471.0</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
